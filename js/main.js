@@ -1,3 +1,10 @@
+/**
+ * Fn returns a random positive non-integer from the range
+ * @param {Number} min default = 0
+ * @param {Number} max default = 100
+ * @param {Number} floatPoint number of characters after the decimal point. Default = 5
+ * @returns {Number}
+ */
 const getRandomPositiveFloatingNum = (min = 0, max = 100, floatPoint = 5) => {
   if (!Number(min)) {
     min = 0;
@@ -22,7 +29,7 @@ const getRandomPositiveFloatingNum = (min = 0, max = 100, floatPoint = 5) => {
 
   /*Эта проверка не нужна, т.к. сама формула исключает появление отрицательного результата, но оставлю её для предотвращения непредвиденного результата*/
   if (min > max) {
-    let box = min;
+    const box = min;
     min = max;
     max = box;
   }
@@ -30,4 +37,4 @@ const getRandomPositiveFloatingNum = (min = 0, max = 100, floatPoint = 5) => {
   let randomNum = (Math.random() * (max - min)) + min;
   randomNum = randomNum.toFixed(floatPoint);
   return Number(randomNum);
-}
+};
