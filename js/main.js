@@ -1,8 +1,8 @@
 /**
  * Fn returns a random positive integer from the range
- * @param {Number} min default = 0
- * @param {Number} max default = 100
- * @returns {Number}
+ * @param {number} min default = 0
+ * @param {number} max default = 100
+ * @returns {number}
  */
 const getRandomPositiveInteger = (min = 0, max = 100) => {
   if (!Number(min)) {
@@ -34,10 +34,10 @@ const getRandomPositiveInteger = (min = 0, max = 100) => {
 
 /**
  * Fn returns a random positive non-integer from the range
- * @param {Number} min default = 0
- * @param {Number} max default = 100
- * @param {Number} floatPoint number of characters after the decimal point. Default = 5
- * @returns {Number}
+ * @param {number} min default = 0
+ * @param {number} max default = 100
+ * @param {number} floatPoint number of characters after the decimal point. Default = 5
+ * @returns {number}
  */
 const getRandomPositiveFloatingNum = (min = 0, max = 100, floatPoint = 5) => {
   if (!Number(min)) {
